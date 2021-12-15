@@ -1,0 +1,127 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px 0 25px;
+    background-color: #fff;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        color: $black;
+        font-size: 2.7rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    &__logo-image {
+        display: block;
+        max-width: 45px;
+        max-height: 45px;
+        object-fit: cover;
+        margin-right: 25px;
+    }
+
+    &__menu {
+        list-style-type: none;
+    }
+
+    &__menu-item {
+        position: relative;
+        margin-bottom: 55px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -1px;
+            display: none;
+            width: 3px;
+            height: 100%;
+            border-radius: 10px;
+            background-color: $blue;
+        }
+
+        &:hover,
+        &--active {
+            .header__menu-link {
+                color: $black;
+            }
+
+            .header__menu-icon {
+                fill: $blue;
+            }
+        }
+
+        &--active {
+            &::after {
+                display: block;
+            }
+        }
+    }
+
+    &__menu-link {
+        display: flex;
+        align-items: center;
+        color: $text-blue;
+        font-size: 1.7rem;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    &__menu-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 40px;
+        fill: $text-blue;
+    }
+
+    &__offer {
+        position: relative;
+        max-width: 220px;
+        padding: 83px 27px 27px;
+        border-radius: 17px;
+        background-color: #f5f5fb;
+    }
+
+    &__offer-image {
+        position: absolute;
+        top: -15%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        max-width: 105px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &__offer-text {
+        color: $text-blue;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-align: center;
+    }
+
+    &__offer-strong {
+        color: $black;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__offer-link {
+        display: block;
+        margin-top: 35px;
+        padding: 15px 0;
+        border-radius: 14px;
+        background-color: $blue;
+        color: $text-white;
+        font-size: 1.7rem;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+    }
+}
