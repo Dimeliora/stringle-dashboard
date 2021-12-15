@@ -93,7 +93,7 @@
         margin-top: 35px;
         padding: 83px 27px 27px;
         border-radius: 17px;
-        background-color: #f5f5fb;
+        background-color: $bg-white;
     }
 
     &__offer-image {
@@ -136,7 +136,7 @@
         &:hover,
         &:focus-visible {
             outline: none;
-            background-color: $blue-transparent;
+            background-color: $blue-light;
         }
     }
 }

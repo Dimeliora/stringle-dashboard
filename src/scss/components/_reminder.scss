@@ -1,0 +1,42 @@
+.reminder {
+    display: flex;
+    align-items: center;
+
+    &--warning {
+        .reminder__image {
+            background-color: #fef2f3;
+        }
+
+        .reminder__icon {
+            fill: #ff606d;
+        }
+    }
+
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 25px;
+        padding: 18px;
+        border-radius: 12px;
+        background-color: #eef2fd;
+    }
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+        fill: $blue;
+    }
+
+    &__description {
+        margin-bottom: 5px;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    &__date {
+        color: $text-blue;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+}

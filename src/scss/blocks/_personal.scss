@@ -1,0 +1,120 @@
+.personal {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 0 25px 30px;
+    background-color: #fff;
+
+    &__logout {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    &__profile {
+        align-self: center;
+        margin-top: 50px;
+    }
+
+    &__avatar {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    &__avatar-wrapper {
+        max-width: 170px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__avatar-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &__avatar-button {
+        position: absolute;
+        bottom: 0;
+        right: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        border-radius: 50%;
+        background-color: $blue;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover,
+        &:focus-visible {
+            background-color: $blue-light;
+        }
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    &__avatar-icon {
+        width: 12px;
+        height: 12px;
+        fill: $text-white;
+    }
+
+    &__username {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__status {
+        margin-top: 12px;
+        color: $text-blue;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    &__progresses {
+        margin-top: 55px;
+    }
+
+    &__progresses-item {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+            --bar-fill-width: 85%;
+        }
+    }
+
+    &__reminders {
+        margin-top: 70px;
+    }
+
+    &__reminders-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    &__reminders-heading {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    &__reminder-item {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__reminders-button {
+    }
+}
