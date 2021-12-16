@@ -1,6 +1,8 @@
 .reminder {
     display: flex;
     align-items: center;
+    color: $black;
+    text-decoration: none;
 
     &--warning {
         .reminder__image {

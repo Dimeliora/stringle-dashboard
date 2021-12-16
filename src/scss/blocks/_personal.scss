@@ -116,5 +116,8 @@
     }
 
     &__reminders-button {
+        .icon-button__icon {
+            fill: $text-blue;
+        }
     }
 }
