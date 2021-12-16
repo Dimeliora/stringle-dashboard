@@ -22,6 +22,10 @@
         padding: 18px;
         border-radius: 12px;
         background-color: #eef2fd;
+
+        @media screen and (max-width: $sm) {
+            margin-right: 15px;
+        }
     }
 
     &__icon {
@@ -34,11 +38,21 @@
         margin-bottom: 5px;
         font-size: 1.6rem;
         line-height: 2.4rem;
+
+        @media screen and (max-width: $sm) {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
     }
 
     &__date {
         color: $text-blue;
         font-size: 1.4rem;
         line-height: 2.1rem;
+
+        @media screen and (max-width: $sm) {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+        }
     }
 }

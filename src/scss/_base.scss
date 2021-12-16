@@ -37,6 +37,11 @@ main {
     margin: 0 -50px;
     padding: 0 50px;
     background-color: #f5f5fb;
+
+    @media screen and (max-width: $lg) {
+        margin: -20px;
+        padding: 20px;
+    }
 }
 
 .container {

@@ -14,6 +14,11 @@
         margin-right: 30px;
         font-size: 1.7rem;
         font-weight: 500;
+
+        @media screen and (max-width: $sm) {
+            margin-right: 20px;
+            font-size: 1.4rem;
+        }
     }
 
     &__search {
@@ -31,9 +36,21 @@
         &:focus-visible {
             background-color: $blue;
 
+            @media screen and (max-width: $md) {
+                background-color: #e5e9fa;
+            }
+
             .main__search-icon {
                 fill: #e5e9fa;
+
+                @media screen and (max-width: $md) {
+                    fill: $blue;
+                }
             }
+        }
+
+        @media screen and (max-width: $sm) {
+            padding: 12px;
         }
     }
 
@@ -96,6 +113,10 @@
         @media screen and (max-width: $xxl) {
             padding: 25px 35px;
         }
+
+        @media screen and (max-width: $sm) {
+            padding: 20px;
+        }
     }
 
     &__greet-text {
@@ -111,11 +132,21 @@
         color: $red;
         font-size: 2.5rem;
         line-height: 3.7rem;
+
+        @media screen and (max-width: $sm) {
+            font-size: 2rem;
+            line-height: 2.8rem;
+        }
     }
 
     &__greet-text {
         font-size: 1.7rem;
         line-height: 2.7rem;
+
+        @media screen and (max-width: $sm) {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
     }
 
     &__greet-image {
@@ -130,6 +161,19 @@
         @media screen and (max-width: $xxl) {
             display: none;
         }
+
+        @media screen and (max-width: $lg) {
+            display: block;
+            max-width: 160px;
+        }
+
+        @media screen and (max-width: $md) {
+            right: 0;
+        }
+
+        @media screen and (max-width: $sm) {
+            display: none;
+        }
     }
 
     &__statistics {
@@ -140,6 +184,19 @@
 
         @media screen and (max-width: $xxl) {
             grid-template-columns: 1fr;
+        }
+    }
+
+    &__results,
+    &__spent {
+        @media screen and (max-width: $sm) {
+            overflow-x: auto;
+        }
+    }
+
+    &__min-width {
+        @media screen and (max-width: $sm) {
+            min-width: 500px;
         }
     }
 
@@ -166,8 +223,16 @@
         &:focus-visible {
             color: $blue;
 
+            @media screen and (max-width: $md) {
+                color: $black;
+            }
+
             .main__more-icon {
                 fill: $blue;
+
+                @media screen and (max-width: $md) {
+                    fill: $black;
+                }
             }
         }
     }
@@ -194,8 +259,16 @@
         &:focus-visible {
             color: $blue;
 
+            @media screen and (max-width: $md) {
+                color: $black;
+            }
+
             .main__dropdown-icon {
                 fill: $blue;
+
+                @media screen and (max-width: $md) {
+                    fill: $black;
+                }
             }
         }
     }

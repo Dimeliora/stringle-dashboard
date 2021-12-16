@@ -6,7 +6,7 @@
 
     @media screen and (max-width: $xl) {
         position: fixed;
-        left: -100vw;
+        left: -150vw;
         top: 0;
         z-index: 100;
         width: 300px;
@@ -15,6 +15,10 @@
         padding: 45px 0 25px 25px;
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.35);
         transition: left 0.3s ease-in-out;
+    }
+
+    @media screen and (max-width: $sm) {
+        width: 100%;
     }
 
     &--active {
@@ -129,17 +133,30 @@
             }
         }
 
-        &--active,
         &:hover,
         &:focus-visible {
+            color: $black;
+
+            @media screen and (max-width: $md) {
+                color: $text-blue;
+            }
+
+            .header__menu-icon {
+                fill: $blue;
+
+                @media screen and (max-width: $md) {
+                    fill: $text-blue;
+                }
+            }
+        }
+
+        &--active {
             color: $black;
 
             .header__menu-icon {
                 fill: $blue;
             }
-        }
 
-        &--active {
             &::after {
                 display: block;
             }
@@ -162,11 +179,8 @@
         border-radius: 17px;
         background-color: $bg-white;
 
-        @media screen and (max-width: $xxl) {
-            margin-top: auto;
-        }
-
         @media screen and (max-width: $xl) {
+            margin-top: 100px;
             padding: 55px 20px 20px;
         }
     }
@@ -220,6 +234,10 @@
         &:hover,
         &:focus-visible {
             background-color: $blue-light;
+
+            @media screen and (max-width: $md) {
+                background-color: $blue;
+            }
         }
 
         @media screen and (max-width: $xl) {

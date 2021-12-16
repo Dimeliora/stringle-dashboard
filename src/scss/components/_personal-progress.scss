@@ -1,10 +1,16 @@
-.subject-progress {
+.personal-progress {
     --bar-fill-width: 50%;
     display: grid;
     grid-template-columns: 53px 1fr 110px;
     grid-template-rows: 53px;
     column-gap: 25px;
     align-items: center;
+
+    @media screen and (max-width: $sm) {
+        grid-template-columns: 45px 1fr 70px;
+        grid-template-rows: 45px;
+        column-gap: 15px;
+    }
 
     &__level-code {
         display: flex;
@@ -21,11 +27,21 @@
         font-size: 1.7rem;
         font-weight: 500;
         line-height: 2.5rem;
+
+        @media screen and (max-width: $sm) {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
     }
 
     &__level {
         color: $text-blue;
         font-size: 1.4rem;
         line-height: 2.1rem;
+
+        @media screen and (max-width: $sm) {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+        }
     }
 }

@@ -18,6 +18,10 @@
     &:focus-visible {
         .icon-button__icon {
             fill: $blue;
+
+            @media screen and (max-width: $md) {
+                fill: $text-blue;
+            }
         }
     }
 }

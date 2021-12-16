@@ -57,8 +57,16 @@
         &:focus-visible {
             opacity: 1;
 
+            @media screen and (max-width: $md) {
+                opacity: 0.8;
+            }
+
             .icon-button__icon {
                 fill: #fff;
+
+                @media screen and (max-width: $md) {
+                    fill: #fff;
+                }
             }
         }
     }

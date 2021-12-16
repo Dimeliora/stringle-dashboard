@@ -7,7 +7,7 @@
     @media screen and (max-width: $lg) {
         position: fixed;
         top: 0;
-        left: -100vw;
+        left: -150vw;
         bottom: 0;
         z-index: 100;
         overflow: auto;
@@ -15,6 +15,10 @@
         padding: 45px 25px 30px;
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.35);
         transition: left 0.3s ease-in-out;
+    }
+
+    @media screen and (max-width: $sm) {
+        width: 100%;
     }
 
     &--active {
@@ -26,13 +30,24 @@
     &__close {
         position: absolute;
         top: 15px;
-        left: 25x;
+        left: 25px;
         display: none;
+        transition: color 0.3s ease-in-out;
 
         &:hover,
         &:focus-visible {
+            color: $blue;
+
+            @media screen and (max-width: $md) {
+                color: $text-blue;
+            }
+
             .personal__close-icon {
-                fill: $text-blue;
+                fill: $blue;
+
+                @media screen and (max-width: $md) {
+                    fill: $text-blue;
+                }
             }
         }
 
@@ -98,6 +113,10 @@
         &:hover,
         &:focus-visible {
             background-color: $blue-light;
+
+            @media screen and (max-width: $md) {
+                background-color: $blue;
+            }
         }
     }
 
