@@ -26,6 +26,13 @@ li {
     padding: 0;
 }
 
+a,
+button {
+    &:focus-visible {
+        outline: none;
+    }
+}
+
 main {
     margin: 0 -50px;
     padding: 0 50px;

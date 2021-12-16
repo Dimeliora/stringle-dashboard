@@ -1,0 +1,43 @@
+.vertical-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+
+    &__label {
+        margin-bottom: 25px;
+        color: $text-blue;
+        font-size: 1.4rem;
+    }
+
+    &__track {
+        position: relative;
+        flex-grow: 1;
+        width: 5px;
+        border-radius: 5px;
+        background-color: #dcdce5;
+        overflow: hidden;
+    }
+    
+    &__fill {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        
+        width: 100%;
+        border-radius: 5px;
+        background-color: $steel;
+
+        &--blue {
+            background-color: $blue;
+        }
+
+        &--red {
+            background-color: $red;
+        }
+
+        &--purple {
+            background-color: $purple;
+        }
+    }
+}

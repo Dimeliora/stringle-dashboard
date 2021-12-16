@@ -68,10 +68,6 @@
             }
         }
 
-        &:focus-visible {
-            outline: none;
-        }
-
         &--active {
             &::after {
                 display: block;
@@ -135,7 +131,6 @@
 
         &:hover,
         &:focus-visible {
-            outline: none;
             background-color: $blue-light;
         }
     }

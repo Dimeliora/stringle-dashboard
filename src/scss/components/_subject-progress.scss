@@ -28,23 +28,4 @@
         font-size: 1.4rem;
         line-height: 2.1rem;
     }
-
-    &__bar {
-        position: relative;
-        flex-grow: 1;
-        height: 5px;
-        border-radius: 5px;
-        background-color: #dcdce5;
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: var(--bar-fill-width);
-            height: 100%;
-            border-radius: 5px;
-            background-color: $blue;
-        }
-    }
 }

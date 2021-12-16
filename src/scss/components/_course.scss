@@ -1,0 +1,65 @@
+.course {
+    display: flex;
+    align-items: center;
+    padding: 23px;
+    color: $text-white;
+
+    &--purple {
+        background-color: $purple;
+    }
+
+    &--steel {
+        background-color: $steel;
+    }
+
+    &--red {
+        background-color: $red;
+    }
+
+    &__level {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 17px 19px;
+        border-radius: 12px;
+        background-color: $text-white-transparent;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    &__description {
+        margin-left: 15px;
+    }
+
+    &__subject {
+        margin-bottom: 5px;
+        opacity: 0.8;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+
+    &__theme {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+
+    &__more {
+        align-self: flex-end;
+        margin-left: auto;
+        opacity: 0.8;
+        transition: opacity 0.2s ease-in-out;
+
+        .icon-button__icon {
+            fill: #fff;
+        }
+
+        &:hover,
+        &:focus-visible {
+            opacity: 1;
+
+            .icon-button__icon {
+                fill: #fff;
+            }
+        }
+    }
+}

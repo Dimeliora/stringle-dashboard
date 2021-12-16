@@ -53,10 +53,6 @@
         &:focus-visible {
             background-color: $blue-light;
         }
-
-        &:focus-visible {
-            outline: none;
-        }
     }
 
     &__avatar-icon {
@@ -79,11 +75,11 @@
     }
 
     &__progresses {
-        margin-top: 55px;
+        margin-top: 65px;
     }
 
     &__progresses-item {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
 
         &:last-child {
             margin-bottom: 0;
@@ -92,14 +88,14 @@
     }
 
     &__reminders {
-        margin-top: 70px;
+        margin-top: 90px;
     }
 
     &__reminders-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 
     &__reminders-heading {
@@ -108,7 +104,7 @@
     }
 
     &__reminder-item {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
 
         &:last-child {
             margin-bottom: 0;

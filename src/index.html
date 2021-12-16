@@ -121,7 +121,427 @@
                 </div>
             </header>
             <main>
-                <section class="main-section"></section>
+                <section class="main">
+                    <div class="main__header">
+                        <time
+                            class="main__date"
+                            datetime="2020-09-19T15:00:00.000Z"
+                            >20 Sep 2020, Monday</time
+                        >
+                        <button class="main__search" aria-label="Search button">
+                            <svg class="main__search-icon">
+                                <use href="/icons/icon-sprite.svg#search" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="main__greet">
+                        <h1 class="main__greet-heading">Welcome back Sadia!</h1>
+                        <p class="main__greet-text">
+                            You’ve learned 80% of your goal this week! <br />
+                            Keep it up and improve your results!
+                        </p>
+                        <img
+                            src="/images/user.webp"
+                            alt="Man sitting on books with laptop"
+                            class="main__greet-image"
+                        />
+                    </div>
+                    <div class="main__statistics">
+                        <div class="main__results paper">
+                            <div class="main__subheading">
+                                <h2 class="main__subtitle">Latest results</h2>
+                                <a href="/" class="main__more">
+                                    More
+                                    <svg class="main__more-icon">
+                                        <use
+                                            href="/icons/icon-sprite.svg#arrow-right"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="main__results-list">
+                                <div
+                                    class="
+                                        main__results-item
+                                        result result--low
+                                    "
+                                >
+                                    <div class="result__description">
+                                        <span class="result__description-strong"
+                                            >Unit 5 - </span
+                                        >Technology
+                                    </div>
+                                    <div class="result__bar bar"></div>
+                                    <div class="result__percentage">25%</div>
+                                </div>
+                                <div class="main__results-item result">
+                                    <div class="result__description">
+                                        <span class="result__description-strong"
+                                            >Unit 12 - </span
+                                        >Ecology
+                                    </div>
+                                    <div class="result__bar bar"></div>
+                                    <div class="result__percentage">44%</div>
+                                </div>
+                                <div class="main__results-item result">
+                                    <div class="result__description">
+                                        <span class="result__description-strong"
+                                            >Unit 9 - </span
+                                        >Real estate
+                                    </div>
+                                    <div class="result__bar bar"></div>
+                                    <div class="result__percentage">40%</div>
+                                </div>
+                                <div
+                                    class="
+                                        main__results-item
+                                        result result--low
+                                    "
+                                >
+                                    <div class="result__description">
+                                        <span class="result__description-strong"
+                                            >Unit 8 - </span
+                                        >Education
+                                    </div>
+                                    <div class="result__bar bar"></div>
+                                    <div class="result__percentage">15%</div>
+                                </div>
+                                <div class="main__results-item result">
+                                    <div class="result__description">
+                                        <span class="result__description-strong"
+                                            >Unit 16 - </span
+                                        >Job market
+                                    </div>
+                                    <div class="result__bar bar"></div>
+                                    <div class="result__percentage">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__spent paper">
+                            <div class="main__subheading">
+                                <h2 class="main__subtitle">
+                                    Time Spent on Learning
+                                </h2>
+                                <button class="main__dropdown">
+                                    Last week
+                                    <svg class="main__dropdown-icon">
+                                        <use
+                                            href="/icons/icon-sprite.svg#angle-small-down"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="main__spent-bars">
+                                <div class="main__spent-item vertical-bar">
+                                    <div class="vertical-bar__label">Mon</div>
+                                    <div class="vertical-bar__track">
+                                        <div
+                                            class="vertical-bar__fill"
+                                            style="height: 100%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--purple
+                                            "
+                                            style="height: 85%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--red
+                                            "
+                                            style="height: 65%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--blue
+                                            "
+                                            style="height: 20%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="main__spent-item vertical-bar">
+                                    <div class="vertical-bar__label">Tue</div>
+                                    <div class="vertical-bar__track">
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--red
+                                            "
+                                            style="height: 100%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--blue
+                                            "
+                                            style="height: 90%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="main__spent-item vertical-bar">
+                                    <div class="vertical-bar__label">Wed</div>
+                                    <div class="vertical-bar__track">
+                                        <div
+                                            class="vertical-bar__fill"
+                                            style="height: 100%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--red
+                                            "
+                                            style="height: 85%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--purple
+                                            "
+                                            style="height: 65%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--blue
+                                            "
+                                            style="height: 45%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="main__spent-item vertical-bar">
+                                    <div class="vertical-bar__label">Thu</div>
+                                    <div class="vertical-bar__track">
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--red
+                                            "
+                                            style="height: 100%"
+                                        ></div>
+                                        <div
+                                            class="vertical-bar__fill"
+                                            style="height: 85%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="main__spent-item vertical-bar">
+                                    <div class="vertical-bar__label">Fri</div>
+                                    <div class="vertical-bar__track">
+                                        <div
+                                            class="vertical-bar__fill"
+                                            style="height: 100%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--purple
+                                            "
+                                            style="height: 85%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--red
+                                            "
+                                            style="height: 55%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--blue
+                                            "
+                                            style="height: 35%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="main__spent-item vertical-bar">
+                                    <div class="vertical-bar__label">Sat</div>
+                                    <div class="vertical-bar__track">
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--purple
+                                            "
+                                            style="height: 100%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--red
+                                            "
+                                            style="height: 80%"
+                                        ></div>
+                                        <div
+                                            class="vertical-bar__fill"
+                                            style="height: 60%"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div class="main__spent-item vertical-bar">
+                                    <div class="vertical-bar__label">Sun</div>
+                                    <div class="vertical-bar__track">
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--red
+                                            "
+                                            style="height: 100%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--purple
+                                            "
+                                            style="height: 75%"
+                                        ></div>
+                                        <div
+                                            class="
+                                                vertical-bar__fill
+                                                vertical-bar__fill--blue
+                                            "
+                                            style="height: 55%"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__spent-legend">
+                                <div
+                                    class="
+                                        main__spent-annotation
+                                        main__spent-annotation--red
+                                    "
+                                >
+                                    <div
+                                        class="main__spent-annotation-color"
+                                    ></div>
+                                    <div class="main__spent-annotation-text">
+                                        Vocabulary
+                                    </div>
+                                </div>
+                                <div
+                                    class="
+                                        main__spent-annotation
+                                        main__spent-annotation--purple
+                                    "
+                                >
+                                    <div
+                                        class="main__spent-annotation-color"
+                                    ></div>
+                                    <div class="main__spent-annotation-text">
+                                        Grammar
+                                    </div>
+                                </div>
+                                <div
+                                    class="
+                                        main__spent-annotation
+                                        main__spent-annotation--blue
+                                    "
+                                >
+                                    <div
+                                        class="main__spent-annotation-color"
+                                    ></div>
+                                    <div class="main__spent-annotation-text">
+                                        Listening
+                                    </div>
+                                </div>
+                                <div class="main__spent-annotation">
+                                    <div
+                                        class="main__spent-annotation-color"
+                                    ></div>
+                                    <div class="main__spent-annotation-text">
+                                        Writing
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__coureses">
+                        <div class="main__subheading">
+                            <h2 class="main__subtitle">Your courses</h2>
+                            <a href="/" class="main__more">
+                                More
+                                <svg class="main__more-icon">
+                                    <use
+                                        href="/icons/icon-sprite.svg#arrow-right"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="main__coureses-grid">
+                            <div
+                                class="
+                                    main__coureses-item
+                                    paper
+                                    course course--purple
+                                "
+                            >
+                                <div class="course__level">B2</div>
+                                <div class="course__description">
+                                    <div class="course__subject">
+                                        Business English
+                                    </div>
+                                    <div class="course__theme">Grammar</div>
+                                </div>
+                                <button class="course__more icon-button">
+                                    <svg class="icon-button__icon">
+                                        <use
+                                            href="/icons/icon-sprite.svg#arrow-right"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div
+                                class="
+                                    main__coureses-item
+                                    paper
+                                    course course--steel
+                                "
+                            >
+                                <div class="course__level">B2</div>
+                                <div class="course__description">
+                                    <div class="course__subject">
+                                        Common English
+                                    </div>
+                                    <div class="course__theme">
+                                        Phrasal Verbs
+                                    </div>
+                                </div>
+                                <button class="course__more icon-button">
+                                    <svg class="icon-button__icon">
+                                        <use
+                                            href="/icons/icon-sprite.svg#arrow-right"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div
+                                class="
+                                    main__coureses-item
+                                    paper
+                                    course course--red
+                                "
+                            >
+                                <div class="course__level">C1</div>
+                                <div class="course__description">
+                                    <div class="course__subject">
+                                        Business Spanish
+                                    </div>
+                                    <div class="course__theme">Vocabulary</div>
+                                </div>
+                                <button class="course__more icon-button">
+                                    <svg class="icon-button__icon">
+                                        <use
+                                            href="/icons/icon-sprite.svg#arrow-right"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
             <aside class="personal">
                 <div class="personal__logout">
@@ -159,7 +579,7 @@
                                 High intermediate
                             </div>
                         </div>
-                        <div class="subject-progress__bar"></div>
+                        <div class="subject-progress__bar bar"></div>
                     </div>
                     <div class="personal__progresses-item subject-progress">
                         <div class="subject-progress__level-code">C2</div>
@@ -167,10 +587,10 @@
                             <h3 class="subject-progress__subject">Spanish</h3>
                             <div class="subject-progress__level">Advanced</div>
                         </div>
-                        <div class="subject-progress__bar"></div>
+                        <div class="subject-progress__bar bar"></div>
                     </div>
                 </div>
-                <a class="personal__reminders">
+                <div class="personal__reminders">
                     <div class="personal__reminders-header">
                         <h2 class="personal__reminders-heading">Reminders</h2>
                         <button class="personal__reminders-button icon-button">
