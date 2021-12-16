@@ -36,7 +36,7 @@
     </head>
     <body>
         <div class="container">
-            <header class="header">
+            <header class="header" id="header-menu">
                 <a href="/" class="header__logo"
                     ><img
                         src="/images/header-logo.webp"
@@ -133,13 +133,25 @@
                                 <use href="/icons/icon-sprite.svg#search" />
                             </svg>
                         </button>
+                        <button
+                            class="main__menu-button"
+                            id="header-menu-button"
+                            aria-label="Menu button"
+                        >
+                            <span></span><span></span><span></span>
+                        </button>
                     </div>
                     <div class="main__greet">
-                        <h1 class="main__greet-heading">Welcome back Sadia!</h1>
-                        <p class="main__greet-text">
-                            You’ve learned 80% of your goal this week! <br />
-                            Keep it up and improve your results!
-                        </p>
+                        <div class="main__greet-text">
+                            <h1 class="main__greet-heading">
+                                Welcome back Sadia!
+                            </h1>
+                            <p class="main__greet-text">
+                                You’ve learned 80% of your goal this week!
+                                <br />
+                                Keep it up and improve your results!
+                            </p>
+                        </div>
                         <img
                             src="/images/user.webp"
                             alt="Man sitting on books with laptop"
