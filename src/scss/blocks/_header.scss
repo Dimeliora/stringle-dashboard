@@ -10,6 +10,7 @@
         top: 0;
         z-index: 100;
         width: 300px;
+        overflow: auto;
         height: 100vh;
         padding: 45px 0 25px 25px;
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.35);
@@ -19,6 +20,17 @@
     &--active {
         @media screen and (max-width: $xl) {
             left: 0;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: none;
+
+        @media screen and (max-width: $xl) {
+            display: inline-block;
         }
     }
 
@@ -38,6 +50,32 @@
         max-height: 45px;
         object-fit: cover;
         margin-right: 25px;
+    }
+
+    &__personal-button {
+        display: none;
+
+        @media screen and (max-width: $lg) {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            font: inherit;
+            color: $text-blue;
+            font-size: 1.7rem;
+            font-weight: 500;
+            transition: color 0.2s ease-in-out;
+
+            .header__personal-icon {
+                width: 25px;
+                height: 25px;
+                margin-right: 40px;
+                fill: $text-blue;
+                transition: fill 0.2s ease-in-out;
+            }
+        }
     }
 
     &__navigation {

@@ -36,7 +36,16 @@
     </head>
     <body>
         <div class="container">
-            <header class="header" id="header-menu">
+            <header class="header" id="header-menu" data-navigation>
+                <button
+                    class="header__close icon-button"
+                    id="header-menu-close"
+                    aria-label="Menu close button"
+                >
+                    <svg class="icon-button__icon">
+                        <use href="/icons/icon-sprite.svg#close" />
+                    </svg>
+                </button>
                 <a href="/" class="header__logo"
                     ><img
                         src="/images/header-logo.webp"
@@ -46,6 +55,15 @@
                     Stringle</a
                 >
                 <nav class="header__navigation">
+                    <button
+                        class="header__personal-button"
+                        id="personal-menu-button"
+                    >
+                        <svg class="header__personal-icon">
+                            <use href="/icons/icon-sprite.svg#user-profile" />
+                        </svg>
+                        Personal
+                    </button>
                     <ul class="header__menu">
                         <li class="header__menu-item">
                             <a
@@ -137,6 +155,7 @@
                             class="main__menu-button"
                             id="header-menu-button"
                             aria-label="Menu button"
+                            data-navigation
                         >
                             <span></span><span></span><span></span>
                         </button>
@@ -555,7 +574,16 @@
                     </div>
                 </section>
             </main>
-            <aside class="personal">
+            <aside class="personal" id="personal-menu" data-navigation>
+                <button
+                    class="personal__close icon-button"
+                    id="personal-menu-close"
+                >
+                    <svg class="personal__close-icon icon-button__icon">
+                        <use href="/icons/icon-sprite.svg#arrow-right" />
+                    </svg>
+                    Back to menu
+                </button>
                 <div class="personal__logout">
                     Logout
                     <button class="personal__logout-button icon-button">
@@ -608,7 +636,7 @@
                         <button class="personal__reminders-button icon-button">
                             <svg
                                 class="icon-button__icon"
-                                viewBox="0 0 22 26"
+                                viewbox="0 0 22 26"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <path
