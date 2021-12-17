@@ -24,6 +24,7 @@
             visibility: visible;
             opacity: 1;
             transform: translateY(0);
+            pointer-events: initial;
         }
     }
 
@@ -62,7 +63,8 @@
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
         transform: translateY(-5px);
         list-style-type: none;
-        transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        pointer-events: none;
     }
 
     &__item {
