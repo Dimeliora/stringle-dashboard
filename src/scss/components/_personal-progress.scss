@@ -7,7 +7,7 @@
     align-items: center;
 
     @media screen and (max-width: $sm) {
-        grid-template-columns: 45px 1fr 70px;
+        grid-template-columns: 45px 1fr 0.75fr;
         grid-template-rows: 45px;
         column-gap: 15px;
     }
