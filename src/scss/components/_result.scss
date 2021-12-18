@@ -33,5 +33,9 @@
         .result__percentage {
             color: $red;
         }
+
+        .result__bar::after {
+            background-color: $red;
+        }
     }
 }
