@@ -1,7 +1,9 @@
 .dropdown {
     position: relative;
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:focus-within {
         .dropdown__title {
             color: $blue;
 
