@@ -23,7 +23,6 @@
         .dropdown__list {
             visibility: visible;
             opacity: 1;
-            transform: translateY(0) translate3d(0, 0, 0);
             pointer-events: initial;
         }
     }
@@ -61,7 +60,7 @@
         border-radius: 12px;
         background-color: #fff;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-        transform: translateY(-5px) translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
         list-style-type: none;
         transition: all 0.2s ease-in-out;
         pointer-events: none;
