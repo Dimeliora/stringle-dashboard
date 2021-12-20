@@ -5,12 +5,11 @@
     border-radius: 5px;
     background-color: #dcdce5;
 
-    &::after {
-        content: "";
+    &__filler {
         position: absolute;
         top: 0;
         left: 0;
-        width: var(--bar-fill-width);
+        width: 0;
         height: 100%;
         border-radius: 5px;
         background-color: $blue;

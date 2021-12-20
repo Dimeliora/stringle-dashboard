@@ -1,5 +1,4 @@
 .result {
-    --bar-fill-width: 50%;
     display: grid;
     grid-template-columns: 1fr 90px 35px;
     column-gap: 10px;
@@ -34,7 +33,7 @@
             color: $red;
         }
 
-        .result__bar::after {
+        .bar__filler {
             background-color: $red;
         }
     }
