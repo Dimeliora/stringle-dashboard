@@ -28,7 +28,7 @@
         }
     }
 
-    &:focus-visible {
+    &:focus {
         outline: none;
     }
 
@@ -78,11 +78,11 @@
         }
 
         &:hover,
-        &:focus-visible {
+        &:focus {
             background-color: $steel-transparent;
         }
 
-        &:focus-visible {
+        &:focus {
             outline: none;
         }
     }

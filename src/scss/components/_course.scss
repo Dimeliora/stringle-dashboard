@@ -54,7 +54,7 @@
         }
 
         &:hover,
-        &:focus-visible {
+        &:focus {
             opacity: 1;
 
             @media screen and (max-width: $md) {

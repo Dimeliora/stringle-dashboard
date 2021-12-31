@@ -33,7 +33,7 @@
         transition: background-color 0.2s ease-in-out;
 
         &:hover,
-        &:focus-visible {
+        &:focus {
             background-color: $blue;
 
             @media screen and (max-width: $md) {
@@ -215,7 +215,7 @@
         transition: all 0.2s ease-in-out;
 
         &:hover,
-        &:focus-visible {
+        &:focus {
             color: $blue;
 
             @media screen and (max-width: $md) {

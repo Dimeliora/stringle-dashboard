@@ -12,7 +12,7 @@ body {
     margin: 0;
     background-color: #fff;
     color: $black;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1,
@@ -26,11 +26,9 @@ li {
     padding: 0;
 }
 
-a,
-button {
-    &:focus-visible {
-        outline: none;
-    }
+a:focus,
+button:focus {
+    outline: none;
 }
 
 main {
