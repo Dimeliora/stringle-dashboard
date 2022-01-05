@@ -6,22 +6,13 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    @include round-highlight($steel-transparent);
 
     &__icon {
+        position: relative;
+        z-index: 10;
         width: 20px;
         height: 20px;
         fill: $text-blue;
-        transition: fill 0.2s ease-in-out;
-    }
-
-    &:hover,
-    &:focus {
-        .icon-button__icon {
-            fill: $blue;
-
-            @media screen and (max-width: $md) {
-                fill: $text-blue;
-            }
-        }
     }
 }

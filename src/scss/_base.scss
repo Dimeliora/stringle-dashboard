@@ -31,31 +31,27 @@ button:focus {
     outline: none;
 }
 
-main {
-    margin: 0 -50px;
-    padding: 0 50px;
-    background-color: #f5f5fb;
-
-    @media screen and (max-width: $lg) {
-        margin: -20px;
-        padding: 20px;
-    }
+.container {
+    max-width: 1785px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.container {
+.main {
     display: grid;
     grid-template-columns: 245px 1fr 380px;
     column-gap: 50px;
-    max-width: 1785px;
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 0 20px;
+    background-color: #f5f5fb;
 
     @media screen and (max-width: $xl) {
         grid-template-columns: 1fr 380px;
+        margin-left: -20px;
+        padding-left: 20px;
     }
 
     @media screen and (max-width: $lg) {
         grid-template-columns: 1fr;
+        margin: 0 -20px;
+        padding: 0 20px;
     }
 }

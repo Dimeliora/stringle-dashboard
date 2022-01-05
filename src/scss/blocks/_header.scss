@@ -1,253 +1,189 @@
 .header {
-    display: flex;
-    flex-direction: column;
-    padding: 45px 0 25px;
-    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding-top: 50px;
 
-    @media screen and (max-width: $xl) {
-        position: fixed;
-        left: -150vw;
-        top: 0;
-        z-index: 100;
-        width: 300px;
-        overflow: auto;
-        height: 100vh;
-        padding: 45px 0 25px 25px;
-        box-shadow: 0 0 16px rgba(0, 0, 0, 0.35);
-        transition: left 0.3s ease-in-out;
+    @media screen and (max-width: $lg) {
+        padding-top: 30px;
     }
 
-    @media screen and (max-width: $sm) {
-        width: 100%;
-    }
-
-    &--active {
-        @media screen and (max-width: $xl) {
-            left: 0;
-        }
-    }
-
-    &__close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        display: none;
-
-        @media screen and (max-width: $xl) {
-            display: inline-block;
-        }
-    }
-
-    &__logo {
-        display: flex;
-        align-items: center;
-        width: fit-content;
-        color: $black;
-        font-size: 2.7rem;
-        font-weight: 600;
-        text-decoration: none;
-    }
-
-    &__logo-image {
-        display: block;
-        max-width: 45px;
-        max-height: 45px;
-        object-fit: cover;
-        margin-right: 25px;
-    }
-
-    &__personal-button {
-        display: none;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        column-gap: 50px;
 
         @media screen and (max-width: $lg) {
             display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-            padding: 0;
-            border: none;
-            background-color: transparent;
-            font: inherit;
-            color: $text-blue;
-            font-size: 1.7rem;
-            font-weight: 500;
-            transition: color 0.2s ease-in-out;
-
-            .header__personal-icon {
-                width: 25px;
-                height: 25px;
-                margin-right: 40px;
-                fill: $text-blue;
-                transition: fill 0.2s ease-in-out;
-            }
+            grid-template-columns: unset;
+            column-gap: unset;
         }
     }
 
-    &__navigation {
-        margin-top: 134px;
-
-        @media screen and (max-width: $xl) {
-            margin-top: 60px;
-        }
-    }
-
-    &__menu {
-        list-style-type: none;
-    }
-
-    &__menu-item {
-        margin-bottom: 45px;
-
-        @media screen and (max-width: $xl) {
-            margin-bottom: 15px;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    &__menu-link {
-        position: relative;
+    &__info {
         display: flex;
         align-items: center;
-        padding: 7px 0;
-        color: $text-blue;
+        justify-self: end;
+    }
+
+    &__date {
+        margin-right: 30px;
         font-size: 1.7rem;
         font-weight: 500;
-        text-decoration: none;
-        transition: color 0.2s ease-in-out;
 
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: -1px;
-            display: none;
-            width: 3px;
-            height: 100%;
-            border-radius: 10px;
-            background-color: $blue;
-
-            @media screen and (max-width: $xl) {
-                right: 1px;
-            }
+        @media screen and (max-width: $lg) {
+            margin-right: 0;
         }
 
-        &:hover,
-        &:focus {
-            color: $black;
-
-            @media screen and (max-width: $md) {
-                color: $text-blue;
-            }
-
-            .header__menu-icon {
-                fill: $blue;
-
-                @media screen and (max-width: $md) {
-                    fill: $text-blue;
-                }
-            }
-        }
-
-        &--active {
-            color: $black;
-
-            .header__menu-icon {
-                fill: $blue;
-            }
-
-            &::after {
-                display: block;
-            }
-        }
-    }
-
-    &__menu-badge {
-        top: 3px;
-        left: 12px;
-    }
-
-    &__menu-icon {
-        width: 24px;
-        height: 24px;
-        margin-right: 40px;
-        fill: $text-blue;
-        transition: fill 0.2s ease-in-out;
-    }
-
-    &__offer {
-        position: relative;
-        max-width: 220px;
-        margin-top: 135px;
-        padding: 83px 27px 27px;
-        border-radius: 17px;
-        background-color: $bg-white;
-
-        @media screen and (max-width: $xl) {
-            margin-top: 100px;
-            padding: 55px 20px 20px;
-        }
-    }
-
-    &__offer-image {
-        position: absolute;
-        top: -35px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: block;
-        max-width: 105px;
-        height: auto;
-        object-fit: cover;
-
-        @media screen and (max-width: $xl) {
-            max-width: 75px;
-        }
-    }
-
-    &__offer-text {
-        color: $text-blue;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        text-align: center;
-
-        @media screen and (max-width: $xl) {
+        @media screen and (max-width: $sm) {
+            margin-right: 20px;
             font-size: 1.4rem;
-            line-height: 2.2rem;
         }
     }
 
-    &__offer-strong {
-        color: $black;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-
-    &__offer-link {
-        display: block;
-        margin-top: 35px;
-        padding: 15px 0;
-        border-radius: 14px;
-        background-color: $blue;
-        color: $text-white;
-        font-size: 1.7rem;
-        font-weight: 500;
-        text-align: center;
-        text-decoration: none;
+    &__search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px;
+        border: none;
+        border-radius: 12px;
+        background-color: #e5e9fa;
+        cursor: pointer;
         transition: background-color 0.2s ease-in-out;
 
         &:hover,
         &:focus {
-            background-color: $blue-light;
+            background-color: $blue;
 
             @media screen and (max-width: $md) {
-                background-color: $blue;
+                background-color: #e5e9fa;
+            }
+
+            .header__search-icon {
+                fill: #e5e9fa;
+
+                @media screen and (max-width: $md) {
+                    fill: $blue;
+                }
             }
         }
 
+        @media screen and (max-width: $lg) {
+            order: -1;
+            margin-right: 30px;
+        }
+
+        @media screen and (max-width: $sm) {
+            margin-right: 20px;
+            padding: 12px;
+        }
+    }
+
+    &__search-icon {
+        width: 18px;
+        height: 18px;
+        fill: $blue;
+        transition: fill 0.2s ease-in-out;
+    }
+
+    &__controls {
+        align-self: start;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 30px;
+        font-size: 1.7rem;
+        font-weight: 500;
+
+        @media screen and (max-width: $lg) {
+            align-self: auto;
+            margin-left: auto;
+            padding: 0;
+        }
+    }
+
+    &__menu-button {
+        display: none;
+
         @media screen and (max-width: $xl) {
-            margin-top: 15px;
-            font-size: 1.4rem;
+            position: relative;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 22px;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: $lg) {
+            margin-left: 40px;
+        }
+
+        @media screen and (max-width: $sm) {
+            margin-left: 30px;
+        }
+
+        span {
+            width: 100%;
+            height: 2px;
+            border-radius: 8px;
+            background-color: $black;
+            transform-origin: 0 0;
+            transition: transform 0.2s ease-out;
+        }
+
+        &--active {
+            span {
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    transform: scale(0) translateY(-50%);
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(-3px);
+                }
+            }
+        }
+    }
+
+    &__logout {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+
+        @media screen and (max-width: $xl) {
+            flex-grow: 0;
+        }
+
+        @media screen and (max-width: $lg) {
+            order: -1;
+        }
+    }
+
+    &__logout-text {
+        @media screen and (max-width: $lg) {
+            display: none;
+        }
+    }
+
+    &__logout-button {
+        @media screen and (max-width: $xl) {
+            margin-left: 20px;
+        }
+
+        @media screen and (max-width: $lg) {
+            margin-left: 0;
         }
     }
 }

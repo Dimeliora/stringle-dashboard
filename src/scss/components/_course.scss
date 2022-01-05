@@ -44,31 +44,14 @@
     }
 
     &__more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         align-self: flex-end;
         margin-left: auto;
         opacity: 0.8;
         transition: opacity 0.2s ease-in-out;
-
-        .icon-button__icon {
-            fill: #fff;
-        }
-
-        &:hover,
-        &:focus {
-            opacity: 1;
-
-            @media screen and (max-width: $md) {
-                opacity: 0.8;
-            }
-
-            .icon-button__icon {
-                fill: #fff;
-
-                @media screen and (max-width: $md) {
-                    fill: #fff;
-                }
-            }
-        }
+        @include round-highlight($blue-light-transparent);
     }
 
     &__more-icon {

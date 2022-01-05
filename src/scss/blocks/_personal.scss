@@ -1,81 +1,27 @@
 .personal {
     display: flex;
     flex-direction: column;
-    padding: 45px 0 25px 30px;
+    padding: 95px 0 25px 30px;
     background-color: #fff;
 
     @media screen and (max-width: $lg) {
-        position: fixed;
-        top: 0;
-        left: -150vw;
-        bottom: 0;
-        z-index: 100;
-        overflow: auto;
-        width: 380px;
-        padding: 45px 25px 30px;
-        box-shadow: 0 0 16px rgba(0, 0, 0, 0.35);
-        transition: left 0.3s ease-in-out;
+        order: -1;
+        margin-top: 100px;
+        padding: 25px 30px;
+        border-radius: 17px;
     }
 
     @media screen and (max-width: $sm) {
-        width: 100%;
-    }
-
-    &--active {
-        @media screen and (max-width: $lg) {
-            left: 0;
-        }
-    }
-
-    &__close {
-        position: absolute;
-        top: 15px;
-        left: 25px;
-        display: none;
-        transition: color 0.3s ease-in-out;
-
-        &:hover,
-        &:focus {
-            color: $blue;
-
-            @media screen and (max-width: $md) {
-                color: $text-blue;
-            }
-
-            .personal__close-icon {
-                fill: $blue;
-
-                @media screen and (max-width: $md) {
-                    fill: $text-blue;
-                }
-            }
-        }
-
-        @media screen and (max-width: $lg) {
-            display: flex;
-            align-items: center;
-            color: $text-blue;
-            font-size: 1.4rem;
-            font-weight: 500;
-        }
-    }
-
-    &__close-icon {
-        margin-right: 10px;
-        transform: rotate(180deg);
-    }
-
-    &__logout {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 1.7rem;
-        font-weight: 500;
+        padding: 25px 20px;
     }
 
     &__profile {
         align-self: center;
-        margin-top: 50px;
+        padding-top: 50px;
+
+        @media screen and (max-width: $lg) {
+            padding-top: 0;
+        }
     }
 
     &__avatar {
