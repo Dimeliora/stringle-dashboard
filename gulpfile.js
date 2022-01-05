@@ -21,8 +21,8 @@ const browserSync = require('browser-sync').create();
 
 const SRC_PATH = './src';
 const DEST_PATH = './dist';
-const FAVICON_DESIGN_PATH = './favicon-design.json';
-const FAVICON_DATA_PATH = './favicon-data.json';
+const FAVICON_DESIGN_PATH = `${SRC_PATH}/favicon/favicon-design.json`;
+const FAVICON_DATA_PATH = `${SRC_PATH}/favicon/favicon-data.json`;
 const IS_PROD = process.env.NODE_ENV === 'production';
 const WEBPACK_MODE = IS_PROD ? 'production' : 'development';
 
@@ -77,6 +77,7 @@ const js = () =>
                 output: {
                     filename: 'script.js',
                 },
+                devtool: IS_PROD ? false : 'eval-source-map',
                 module: {
                     rules: [
                         {
@@ -174,6 +175,15 @@ const injectFavicons = () =>
         .pipe(
             realFavicon.injectFaviconMarkups(
                 JSON.parse(fs.readFileSync(FAVICON_DATA_PATH)).favicon.html_code
+            )
+        )
+        .pipe(
+            gulpIf(
+                IS_PROD,
+                htmlMin({
+                    collapseWhitespace: true,
+                    removeComments: true,
+                })
             )
         )
         .pipe(dest(DEST_PATH, { overwrite: true }));
